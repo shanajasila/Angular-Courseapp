@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row g-3 mt-4">
+       <table class="table   text-center">
+                        <thead>
+                             <tr>
+                                <th>Id</th>
+                                <th>Course Title</th>
+                                <th>Course Description</th>
+                                <th>Course Duration</th>
+                                <th>Course Date</th>
+                                <th>Course Venue</th>
+                             </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of course">
+                                <td>{{i._id}}</td>
+                                <td>{{i.courseTitle}}</td>
+                                <td>{{i.courseDescription}}</td>
+                                <td>{{i.courseDuration}}</td>
+                                <td>{{i.courseDate}}</td>
+                                <td>{{i.courseVenue}}</td>
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+    </div>
+</div>
+
+
